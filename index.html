@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무신사</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <ul class="gnb">
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">스냅</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">마이페이지</a></li>
+        </ul>
+        <nav class="nav">
+            <div class="logo">
+                MUSINSA
+            </div>
+            <ul class="menu">
+                <li><a href="#">추천</a></li>
+                <li><a href="#">랭킹</a></li>
+                <li><a href="#">세일</a></li>
+                <li><a href="#">브랜드</a></li>
+                <li><a href="#">신상</a></li>
+                <li><a href="#">연말 결산 세일</a></li>
+                <li><a href="#">무진장 결산 보고서</a></li>
+            </ul>
+            <ul class="m_menu">
+                <li><a href="#">DEPARTMENT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">YOUTUBE</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">LOCATION</a></li>
+            </ul>
+            <button type="button" class="m_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <div class="main">
+        <video src="imgs/video.mp4" autoplay loop muted></video>
+        <div class="main_title">
+            <h1>무진장 24 겨울 결산 보고서</h1>
+            <p>
+                <strong>브랜드 4,000개 | 할인 상품 438,604개</strong> <br>
+                무진장 24 겨울 블프가 또 한 번 일궈낸 기록 <br>
+                무신사 회원 들의 소비 패턴과 최애 아이템까지 총정리한 무진장 리뷰 확인해보세요!
+            </p>
+            <a href="#">read more</a> 
+        </div>
+    </div> <!-- main end-->
+    <div class="contents">
+        <p>지금 인기 카테고리 브랜드 <br>
+            후드 티셔츠 추천
+        </p>
+        <ul class="list">
+            <li>
+                <a href="#">
+                    <img src="imgs/news1.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae minus, eaque corrupti vero ad maiores!
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/news2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae minus, eaque corrupti vero ad maiores!
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/news3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae minus, eaque corrupti vero ad maiores!
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/news4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae minus, eaque corrupti vero ad maiores!
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div><!-- contents-->
+    <footer class="footer">
+        <div class="f_top">
+            <div class="logo">DCODELAB</div>
+            <ul class="f_menu">
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Family Site</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.<br>
+            TEL : 031-111-1234 C.P : 010-1234-5678<br><br>
+            2020 DOCDELAB © copyright all right reserved.
+        </div>
+    </footer>
+    <script>
+        const $m_menu = $('.m_menu');
+
+        $m_menu.hide();
+        $('.m_btn').click( function (){
+            $('.m_menu').slideToggle();
+        });
+    </script>
+</body>
+</html>
